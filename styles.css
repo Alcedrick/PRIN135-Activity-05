@@ -25,3 +25,28 @@ footer {
     text-align: right;
     padding: 20px 50px;
 }
+
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 50px 100px;
+}
+
+#gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media (max-width: 1024px) {
+    #gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    #gallery {
+        grid-template-columns: 1fr;
+    }
+}
